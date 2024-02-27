@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio</title>
+</head>
+<body>
+    <form method="post">
+    <!--    utilizando [] o servidor entende como uma lista de valores 
+    
+            ex: php
+    
+            $opcional [queijo, calebresa]
+        
+    -->
+        <input type="checkbox" name="opcional[]" value="queijo"> + queijo <br>
+        <input type="checkbox" name="opcional[]" value="calabreza"> + calabreza <br>
+        <input type="checkbox" name="opcional[]" value="cebola"> + cebola <br>
+        <input type="checkbox" name="opcional[]" value="azeitona"> + azeitona <br>
+        <p>Borda rechada?</p>
+
+        <!--radio efetua o envio de uma opção, porém, ambas devem estar com o mesmo name-->
+
+        <input type="radio" name="borda" value="sim"> + sim <br>
+        <input type="radio" name="borda" value="nao"> + nao <br>
+
+        <p>Bebida</p>
+        
+        <input type="radio" name="" value="Suco"> + Suco <br>
+        <input type="radio" name="" value="Refrigerante"> + Refrigerante <br>
+        <input type="radio" name="" value="Água"> + Água <br>
+        <input type="radio" name="" value="Nenhum"> + Nenhum <br>
+
+        <button type="submit">Enviar pedido</button>
+    </form>
+</body>
+</html>
