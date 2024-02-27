@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+<h3>Formulário</h3>
+<!-- 
+
+FORMULÁRIO
+
+method="POST" ENVIA uma requisição ao servidor com os dados criptografados
+metod ="GET" ENVIA  uando utilizamos o GET, os parâmetros são passados no cabeçalho da requisição. 
+Por isso, podem ser vistos pela URI, como no caso do nosso formulário de login
+target="_blank" abre uma nova guia ao acessar um link ou enviar um formulário 
+autocomplete="on" salva as informações em um formulário. on / off 
+onsubmit="" interação com javascript 
+--->
+
+    <form name="signup" onsubmit="alert('aiaiai');" autocomplete="on" target="_blank" method="GET" action="#">
+        Nome: <input type="text" name="name" /><br>
+        Idade: <input type="number" name="age" /><br>
+        Senha: <input type="password" name="password" /><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <br>
+    <br>
+
+<h3>Input</h3>
+<!-- 
+
+INPUT
+
+Campos onde serão inseridos valores -->
+
+    <form>
+        <label>TEXTO:</label> <input type="text" /> <!-- campo de texto --> <br><br>
+        <label>NUMERO:</label> <input type="number" min="0" max="" step="5"/> <br> <br><!-- seleção de numeros | ATRIBUTOS: min: minimo, max: máximo, step: qtde pulados -->
+        <label>BARRA:</label> <input type="range" min="0" max="100"> <br> <br>
+        <label>CAIXA DE COR:</label> <input type="color"> <br> <br>
+        <label>E-MAIL:</label> <input type="email"/> <br> <br> <!-- somente email -->
+        <label>URL</label> <input type="url"> <br> <br> <!-- somente url -->
+        <label>DATA</label> <input type="date"> <br> <br> <!-- importa o estilo da data de acordo com a linguagem padrao do pc-->
+        <label>Semana</label> <input type="week"> <br> <br> 
+        <label>MÊS:</label> <input type="month"> <!-- mes -->
+        <label>BOTAO:</label> <button> Enviar </button> <br> <br> <!-- Semanticamente adequado para exibir um botao-->
+        <label>CHECK BOX:</label> <input type="checkbox"> <br> <br> <!-- seleciona mais de uma opção -->
+        <label>RADIO: </label> <input type="radio" name="mesmo">  <br> <br>
+        <label>RADIO: </label> <input type="radio" namee="mesmo"> <br> <br>
+        <input type="hidden"/> <!-- campo invisivel ao usuário -->
+        <label>ARQUIVO: </label><input type="file" multiple/> <br> <br> <!-- multiple selciona mais de um arquivo -->
+        <label>BUSCA: </label><input type="search"> <br> <br> <!-- campo de busca-->
+    </form>
+</body>
+</html>
