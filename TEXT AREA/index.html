@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT AREA</title>
+</head>
+<body>
+    <!--Area de texto -->
+    <form method="get" onsubmit="">
+        <label>Nome:</label> <input type="text"> <br>
+        
+        <label>Cargo:</label>
+        <select name="role" multiple> <!--Multiple: multiplos itens de uma lista usando o CTRL -->
+            <option selected value="">Selcione o cargo:</option>
+            <option value="Administrativo">Administrativo</option>
+            <option value="gerente">Gerente</option>
+            <option value="diretor">Diretor</option>
+            <option value="presidente">Presidente</option>
+        </select> <br>
+        
+        <label>Assunto:</label> <input type="text"> <br>
+        <label>Mensagem:</label> <textarea name="message" rows="10" cols="50"></textarea> <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
