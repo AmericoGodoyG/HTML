@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tags HTML 5 - ESTRUTURAL</title>
+        <style>
+            nav ul {
+                display: flex;
+                list-style: none;
+                margin: 0;
+            }
+            nav ul li a {
+                padding: 10px 15px;
+                color: blue;
+                text-decoration: none;
+                border-radius: 15px 15px 0 0;
+            }
+            nav ul li a:hover{
+                color: white;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!--Container que detem informações relacionadas -->
+        <figure>
+            <!--Escopo da informação -->
+            <img src=""> 
+            <figcaption>Descrição</figcaption><!--Descrição da figura -->
+        </figure>
+
+        <!-- Várias versões da mesma imagem para diversos dispositivos -->
+        <picture>
+            <source srcset="imagem1.jpg"  media="(min-width: 600px)">
+            <img src="imagem2" alt="">
+        </picture>
+        
+        <header>
+            <nav> <!--Usada na criação de menus de navegação -->
+                <ul>
+                    <li><a href="">Item1</a></li>
+                    <li><a href="">Item2</a></li>
+                    <li><a href="tel:+5514999999999">Telefone</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Conteúdo príncipal da página: 
+        MAIN é uma tag principal e não pode ser filha header, footer, section ,article, aside, footer e nav-->
+        
+        <main>
+        <!--ARTICLE usado para o conteúdo da página. Permite o aninhamenteo-->
+            <article>
+                <article></article>
+            </article>
+
+            <!--Usado em citação
+            cite=""; atributo usado para localizar o endereço da citação
+            <q> Citação com menos linhas
+            -->
+            <blockquote></blockquote>
+
+        <!--Representa uma seção autônoma genérica de um documento, 
+            que não possui um elemento semântico mais específico para representá-lo-->
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+
+            <!--Apresentação de conteúdos fora do contexto da página-->
+            <aside></aside> 
+
+    
+        </main>
+
+        <footer>
+
+
+
+        </footer>
+
+    </body>
+</html>
